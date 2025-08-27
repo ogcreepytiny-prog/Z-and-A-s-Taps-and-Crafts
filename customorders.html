@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <script src="script.js" defer></script> <!-- Corrected the attribute name -->
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container"></div>
+        <div class="navbar__toggle" id="mobile-member">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span> <!-- Fixed the closing tag -->
+        </div>
+        <ul class="navbar__menu"> <!-- Fixed the class attribute -->
+            <li class="navbar__item">
+                <a href="/index.html" class="navbar__links">Home</a> <!-- Removed extra closing tag -->
+                  <a href="/payment.html" class="navbar__links">Pay here</a>
+            </li>
+        </ul>
+    </nav>
+
+    <form action="https://formsubmit.co/og.creepy.tiny@gmail.com" method="POST">
+    <imput type="hidden" name="_captcha" value="false">
+         <imput type="hidden" name="_subject" value="New Form Request!">
+         <imput type="hidden" name="_template" value="table">
+
+<lable>Please enter a detailed discription of what you want us to make for you</lable>
+<input type="text" id="myTextBox" name="message" placeholder=""Type here...>
+<br><br>
+<button type="submit" id="mySubmit">Submit</button>
+</form>
+    <script>
+        document.body.style.backgroundColor = "#202020"
+    </script>
+
+    <style>
+        .navbar__links {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar__links:hover {
+            color: rgb(211, 210, 210);
+        }
+        #myTextBox {
+            background-color: 202020;
+            color: black;
+            border:2px solid black;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        #mySubmit{
+            background-color: 1e1e1e;
+            color: 707070;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #mySubmit:hover {
+            background-color: rgb(80, 80, 80);
+        }
+        
+        body {
+            color: white;
+        }
+    </style>
+</body>
+</html>
